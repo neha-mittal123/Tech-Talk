@@ -27,7 +27,7 @@ public class Lastcontroller extends HttpServlet{
 		//System.out.println(u1);
 		try (PrintWriter pw = rs.getWriter()) {
 			EmployeeDto u1= (EmployeeDto) hs.getAttribute("u_details");
-			pw.print("<body bgcolor='cyan'></body> ");
+			pw.print("<body background='images/my page/537331500.jpg'></body> ");
 			if (u1 != null) 
 				pw.print("Cookie based User details from Logout page" + u1);
 				else

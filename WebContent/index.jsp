@@ -6,10 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>ATMECS</title>
 </head>
-<body bgcolor="cyan">
-<h1 align="center">WELCOME...!!!</h1>
+<body background="images/my page/499174-art-images-of-technology-background.jpg">
+<br/><br/><h1 align="center"><font color="blue">WELCOME...!!!</font></h1><br/><br/><br/><br/>
 <h3><a href="login.jsp">EMPLOYEE_LOGIN</a></h3>
-<h5><a href="register.jsp">REGISTER</a></h5>
+<h4><a href="register.jsp">REGISTER</a></h4>
 <h3><a href="Adminlogin.jsp">ADMIN_LOGIN</a></h3>
+
 </body>
 </html>

@@ -204,8 +204,7 @@ html,body{
             <div id="output"></div>
             <div class="avatar"></div>
             <div class="form-box">
-                <form action="addtechtalk" method="post" >
-                    <input name="id" type="number" placeholder="id">
+                <form action="reqtechtalk" method="post" >
                     <input type="text" name="date" placeholder="date">
                       <input type="text" name="title" placeholder="title">
                         <input type="text" name="description" placeholder="description">

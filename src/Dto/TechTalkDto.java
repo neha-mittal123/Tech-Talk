@@ -9,9 +9,18 @@ public class TechTalkDto {
 	private String title;
 	private String description;
 	private String presenter;
+	
 	public TechTalkDto(int s_id, Date date, String title, String description, String presenter) {
 		super();
 		this.s_id = s_id;
+		this.date = date;
+		this.title = title;
+		this.description = description;
+		this.presenter = presenter;
+	}
+	public TechTalkDto( Date date, String title, String description, String presenter) {
+		super();
+	
 		this.date = date;
 		this.title = title;
 		this.description = description;

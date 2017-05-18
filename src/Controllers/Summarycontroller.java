@@ -13,9 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import Dao.TechTalkDao;
 import Dto.EmployeeDto;
 import Dto.TechTalkDto;
-import Model.TechTalkDao;
 
 
 @SuppressWarnings("serial")
@@ -31,7 +31,7 @@ public void doGet(HttpServletRequest rq,HttpServletResponse rs) throws IOExcepti
 		EmployeeDto u1=(EmployeeDto) hs.getAttribute("u_details");
 		//RequestDispatcher rd=rq.getRequestDispatcher("summary");
 		//System.out.println(u1);
-		pw.print("<body bgcolor='cyan'></body> ");
+		pw.print("<body background='images/my page/industrial-technology-background-9272828.jpg'></body> ");
 		if(u1!=null){
 			pw.print("Hello,"+u1.getName()+"<br>");
 			pw.print("ur details are :"+u1);
@@ -48,7 +48,7 @@ public void doGet(HttpServletRequest rq,HttpServletResponse rs) throws IOExcepti
 		}
 		//if(rd!=null)
 		//	rd.forward(rq, rs);
-		pw.print("<h5><a href='"+url+"'>Log-Out</a></h5><h5><a href='TechTalk.jsp'>AddTechTalk</a></h5>");
+		pw.print("<br/><h3 align='right'><a href='"+url+"'>Log-Out</a></h5><h5><a href='TechTalk.jsp'>RequestTechTalk</a></h3>");
 	}catch(Exception e){
 		try {
 			throw new ServletException("err in doget"+e);

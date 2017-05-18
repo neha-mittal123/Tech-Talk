@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import Dao.EmployeeDao;
 import Dto.EmployeeDto;
-import Model.EmployeeDao;
 
 
 
@@ -30,7 +30,7 @@ public class Logincontroller extends HttpServlet {
 			String name = request.getParameter("email");
 			String pass = request.getParameter("password");
 			EmployeeDto u1=dao.validateEmployee(name,pass);
-			pw.print("<body bgcolor='cyan'></body> ");
+			pw.print("<body background='images/my page/icona-differente-di-tecnologia-e-del-social-27723841.jpg'></body> ");
 			if(u1!=null){
 				pw.print("Logged in Successfully");
 				

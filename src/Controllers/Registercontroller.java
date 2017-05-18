@@ -8,7 +8,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import Model.EmployeeDao;
+
+import Dao.EmployeeDao;
 
 @SuppressWarnings("serial")
 @WebServlet("/register")
@@ -25,7 +26,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			String name = request.getParameter("name");
 			int u1=dao.createEmployee(email, pass, name);
 			System.out.println("value of register u1"+u1);
-			pw.print("<body bgcolor='cyan'></body> ");
+			pw.print("<body background='images/my page/image-slider-2.jpg'></body> ");
 			if(u1==1){
 				pw.print(" registered Successfully");
 				

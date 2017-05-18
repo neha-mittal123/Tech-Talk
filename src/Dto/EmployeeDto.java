@@ -47,7 +47,7 @@ public class EmployeeDto {
 
 	@Override
 	public String toString() {
-		return "EmployeeDto [email=" + email + ", password=" + password + ", name=" + name + "]";
+		return "email=" + email + ", name=" + name;
 	}
 	
 	

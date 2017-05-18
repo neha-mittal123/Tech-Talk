@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import Dao.EmployeeDao;
 import Dto.EmployeeDto;
-import Model.EmployeeDao;
 
 @SuppressWarnings("serial")
 @WebServlet("/AdminLogin")
@@ -27,6 +27,7 @@ public class AdminLogincontroller  extends HttpServlet{
 			String pass = request.getParameter("password");
 			EmployeeDto u1=dao.validateEmployee(name,pass);
 			pw.print("<body bgcolor='cyan'></body> ");
+			System.out.println("in admin controller");
 			if(u1!=null){
 				pw.print("Logged in Successfully");
 				

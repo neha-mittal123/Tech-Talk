@@ -5,17 +5,12 @@ import java.sql.Date;
 public class PendingRequestDto {
 
 	
-	private int s_id;
+	
 	private Date date;
 	private String title;
 	private String description;
 	private String presenter;
-	public int getS_id() {
-		return s_id;
-	}
-	public void setS_id(int s_id) {
-		this.s_id = s_id;
-	}
+	
 	public Date getDate() {
 		return date;
 	}
@@ -40,9 +35,9 @@ public class PendingRequestDto {
 	public void setPresenter(String presenter) {
 		this.presenter = presenter;
 	}
-	public PendingRequestDto(int s_id, Date date, String title, String description, String presenter) {
+	public PendingRequestDto( Date date, String title, String description, String presenter) {
 		super();
-		this.s_id = s_id;
+		
 		this.date = date;
 		this.title = title;
 		this.description = description;
@@ -50,7 +45,7 @@ public class PendingRequestDto {
 	}
 	@Override
 	public String toString() {
-		return "PendingRequestDto [s_id=" + s_id + ", date=" + date + ", title=" + title + ", description="
+		return "PendingRequestDto [date=" + date + ", title=" + title + ", description="
 				+ description + ", presenter=" + presenter + "]";
 	}
 	
